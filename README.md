@@ -38,3 +38,27 @@ Built a Retrieval-Augmented Generation system that answers questions from a docu
 
 ## About
 Built as part of a structured AI/ML learning track targeting Applied AI / Forward Deployed Engineer roles.
+---
+
+### 3. MCP Travel Agent — Multi-Tool AI Agent
+
+A multi-tool AI agent using Claude's tool-use API (the pattern that powers MCP). Ask one travel question and Claude automatically calls three tools — weather checker, flight cost estimator, currency converter — then combines all results into one natural answer.
+
+**What I built:**
+- `convert_currency` — converts between USD, INR, EUR, GBP, JPY
+- `get_weather` — returns weather for major cities
+- `estimate_flight_cost` — estimates flight cost between cities
+- Agent loop — `while stop_reason == "tool_use"` keeps firing tools until Claude has everything it needs
+
+**Stack:** Python, Claude Haiku API, Tool Use / MCP pattern, Google Colab
+
+**File:** `mcp_travel_agent.ipynb`
+
+---
+
+## Key Skills Demonstrated
+- QLoRA fine-tuning on open-source LLMs
+- RAG pipeline design and evaluation
+- Hallucination detection and grounding
+- Multi-tool AI agent development with MCP pattern
+- Iterative debugging (diagnosing underfitting, fixing and retesting)
